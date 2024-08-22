@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // let infoUser = {
+        //     fullName:"phan thi kieu anh",
+        //     age:20,
+        //     email:"phananh@gmail.com"
+        // };
+        //vd1: JSON co ga tri object
+        // let infoUserJson =`
+        // {
+        // "fullName":"phan thi kieu anh",
+        //     "age":20,
+        //    "email":"phananh@gmail.com"
+        // }
+        // `;
+        // console.log(infoUserJson);
+
+        // let infoUserJsontoJS = JSON.parse(infoUserJson);
+        // let infoUserJStoJson = JSON.stringify(infoUser);
+
+        // console.log(infoUserJsontoJS );
+        // console.log(infoUserJsontoJS.fullName);
+        // console.log(infoUserJsontoJS.email);
+    </script>
+
+    <script>
+        // vd 2 hson co gia tri so
+        // let jsonNumber = `5`;
+        // console.log(jsonNumber);
+        // console.log(JSON.parse(jsonNumber));
+
+    </script>
+
+    <script>
+        // vi du 3 json co gia tri string
+        // let jsonString = `"Xin chao ban! "`;
+        // console.log(jsonString);
+        // console.log(JSON.parse(jsonString));
+
+    </script>
+
+    <script>
+        // vi du 4 json co gia tri la boolean
+        // let jsonBoolean = `true `;
+        // console.log(jsonBoolean);
+        // console.log(JSON.parse(jsonBoolean));
+    </script>
+    <div id="listUser" class="user-list"></div>
+    <script>
+        // let jsonArray = `
+        // [
+        // {
+        //   "id":1,
+        //   "name":"Le van a", 
+        //   "email":"a@gmail.com"
+        // },
+        //  {
+        //   "id":2,
+        //   "name":"Le van b",
+        //   "email":"a@gmail.com"
+        // },
+        //  {
+        //   "id":2,
+        //   "name":"Le van c ",
+        //   "email":"a@gmail.com"
+        // }
+        // ] 
+        // `;
+
+        // let listUser = JSON.parse(jsonArray);
+        // let htmls  = "";
+
+        // listUser.forEach(item => {
+        //     htmls += `
+        //     <div class="user-item">
+        //         <div class="inner-name">${item.name}</div>
+        //         <div class="inner-name">${item.email}</div>
+        //     </div>`
+            
+        // });
+
+        // const divListUser = document.querySelector("#listUser");
+        // divListUser.innerHTML= htmls;
+        // console.log(htmls);
+    </script>
+
+    <script>
+        // vi du 5 json co gia tri la Null
+        let jsonNull = `null `;
+        console.log(jsonNull);
+        console.log(JSON.parse(jsonNull));
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // console.log(window.location.href);
+        // console.log(this.location.href);
+    </script>
+    <script>
+        // "use strict";
+
+        // function test(){
+        //     console.log(this);
+        // }
+        // test();
+    </script>
+    <button id="button">Button</button>
+    <ul id="menu">
+        <li>Muc 1</li>
+        <li>Muc 2</li>
+        <li>Muc 3</li>
+    </ul>
+
+    <script>
+
+        const button = document.querySelector("#button");
+
+        button.addEventListener("click",function(){
+            console.log(this);
+        })
+
+        const listItem = document.querySelector("#menu li");
+        console.log(listItem);
+
+        // [listItem].forEach(function(item){
+        //     item.addEventListener("click",function(){
+        //         console.log(this);
+        //         // console.log(item);
+        //     });
+        // });
+
+        // [listItem].forEach(function(item){
+        //     item.addEventListener("click",() => {
+        //         console.log(item);
+        //         console.log(this);//this ko ton tai trong arrow function
+                
+        //     });
+        // });
+
+
+    </script>
+
+    <script>
+
+        // let info = {
+        //     fullName : "phan thi kieu anh",
+        //     age:20,
+        //     email: "anh@gmail.com",
+        //     getFullName: function(){
+        //         // console.log(info.fullName);
+        //         console.log(this.fullName);
+        //     },
+        //     cccd:{
+        //         fullName:"PHAN THI KIEU ANH",
+        //         address:"so 123, duong ABC",
+        //         getInfoCCCD: function(){
+        //             console.log(this.fullName);
+        //         }
+        //     }
+        // };
+        // info.getFullName();
+        // info.cccd.getInfoCCCD();
+    </script>
+</body>
+</html>

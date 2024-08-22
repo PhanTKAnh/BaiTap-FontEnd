@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        // let numbers = [1,2,3,4,5,6,7,8,9,10];
+        // let tong = 0;
+
+        // numbers.forEach(function(item, index, array){
+        //     console.log(item,index,array);
+        //     tong += item;
+        //     numbers[index] = 20;
+        // });
+
+        // console.log(tong);
+        // console.log(numbers);
+
+
+        // let numbers = [1,2,3,4,5,6,7,8,9,10];
+
+        // let ketQua = numbers.forEach(item =>{
+        //     // console.log(item);
+        //     return item;
+        // })
+
+        // console.log(ketQua);
+
+
+    </script>
+
+
+    <script>
+        // const monHoc = [
+        //     {
+        //         ten: "Toan",
+        //         diem: 8.6
+        //     },
+        //     {
+        //         ten: "Ly",
+        //         diem: 9.2
+        //     },
+        //     {
+        //         ten: "Hoa",
+        //         diem: 8.5
+        //     },
+        //     {
+        //         ten: "Tin",
+        //         diem: 7.8
+        //     },
+        //     {
+        //         ten: "Tin",
+        //         diem: 9
+        //     },
+        // ];
+
+        // const hocSinhGioi = monHoc.every(function(item){
+        //     return item.diem >= 8;
+        // })
+
+        // console.log(hocSinhGioi);
+
+        // if(hocSinhGioi == true){
+        //     console.log("Day la hoc sinh gio");
+        // }else{
+        //     console.log("Day la ko phai sinh gioi")
+        // }
+
+        // const oLaiLop = monHoc.some(function(item){
+        //     return item.diem < 4;
+        // })
+
+        // console.log(oLaiLop);
+
+        // if(oLaiLop === true){
+        //     console.log("Day la o lai lop");
+        // }else{
+        //     console.log("Day la len lop")
+        // }
+
+
+        // const xemDiemTin = monHoc.find (function(item){
+        //     return item.ten == "Tin";
+        // })
+
+        // console.log(xemDiemTin);
+        // console.log(xemDiemTin.diem);
+
+        // if(xemDiemTin){
+        //     console.log("Day mon tin cua ban la",xemDiemTin.diem);
+        // }else{
+        //     console.log("ko tim thay mon hoc")
+        // }
+
+
+        // const xemDiemTin = monHoc.filter(function(item){
+        //     return item.ten == "Tin";
+        // })
+
+        // console.log(xemDiemTin);
+
+        // if(xemDiemTin){
+        //     console.log("Day mon tin cua ban la",xemDiemTin);
+        // }else{
+        //     console.log("ko tim thay mon hoc");
+        // } 
+
+    </script>
+
+    <script>
+        // let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+        // let ketQua = numbers.map((item, index, array) => {
+        //     return item;
+        // })
+
+        // console.log(ketQua);
+
+
+
+
+        // const monHoc = [
+        //     {
+        //         ten: "Toan",
+        //         diem: 8.6
+        //     },
+        //     {
+        //         ten: "Ly",
+        //         diem: 9.2
+        //     },
+        //     {
+        //         ten: "Hoa",
+        //         diem: 8.5
+        //     },
+        //     {
+        //         ten: "Tin",
+        //         diem: 7.8
+        //     },
+        //     {
+        //         ten: "Tin",
+        //         diem: 9
+        //     },
+        // ];
+
+        // let danhSachMoi = monHoc.map(item =>{
+        //     let hocLuc ="";
+        //     if(item.diem >= 8){
+        //         hocLuc = "gioi";
+        //     } else if(item.diem < 8 && item.diem >= 6.5){
+        //         hocLuc = "Kha";
+        //     }else {
+        //         hocLuc = "Trung binh";
+        //     }
+        //     return{
+        //         ten: item.ten,
+        //         hocluc: hocLuc
+        //     };
+
+        // });
+        // console.log(monHoc);
+        // console.log(danhSachMoi);
+
+
+    </script>
+
+    <script>
+
+        // let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+        // let tong = numbers.reduce((total, item) => {
+        //     return total + item;
+        // });
+        // let trungBinh = numbers.reduce((total, item) => {
+        //     console.log(total);
+        //     return total + item/numbers.length;
+        // },0);
+        // console.log("---------------------------------");
+        // console.log(tong);
+        // console.log(trungBinh);
+
+    </script>
+
+    <script>
+        const monHoc = [
+            {
+                ten: "Toan",
+                diem: 8.6
+            },
+            {
+                ten: "Ly",
+                diem: 9.2
+            },
+            {
+                ten: "Hoa",
+                diem: 8.5
+            },
+            {
+                ten: "Tin",
+                diem: 7.8
+            },
+        ];
+
+        let tong = monHoc.reduce((total, item) => {
+            return total + item.diem;
+        }, 0);
+        let trungBinh = monHoc.reduce((total, item) => {
+            return total + item.diem / monHoc.length;
+        }, 0);
+        console.log(tong);
+        console.log(trungBinh);
+    </script>
+
+
+
+
+
+
+</body>
+
+</html>

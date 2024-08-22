@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // var a = 10;
+        // var b = "1234";
+        // var c =  'test'
+        // var d = `tezt3`;
+        // var e = true;
+        // var f;
+        // console.log(f);
+
+        // var g = null;
+
+        // console.log(g); 
+        // function sum(a,b){
+        //     alert(a+b);
+        // }
+        // sum(10,20);
+        // var infoUser = {
+        //     name:"Le Van A",
+        //     age: 18,
+        //     email:"levana@gmail.com",
+        //     phone:"0987654321",
+        //     sum: function(a,b){
+        //         alert(a+b);
+        //     }
+        // }
+        // console.log(infoUser.age);
+        // console.log(infoUser.email);
+        // console.log(infoUser.phone);
+       
+        // infoUser.sum(10,20);
+
+        var listUser = [
+            "Le Van A",
+            "Nguyen Thi B",
+            "Do Van C",
+            function(a,b){
+                alert(a+b);
+            }
+    ]
+    console.log(listUser);
+    console.log(listUser[0]);
+    listUser.sum = function(a,b){
+        alert(a+b);
+    }
+    listUser.age = 20;
+    listUser.sum(10,20);
+ // console.log(listUser[3](10,20));
+</script>
+    
+</body>
+</html>

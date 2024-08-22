@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- onload -->
+    <!-- <script>
+
+        window.onload = function () {
+            const menu = document.querySelector("#menu");
+
+            console.log(menu);
+
+        };
+
+
+    </script>
+    <ul id="menu">
+        <li>Muc 1</li>
+        <li>Muc 2</li>
+        <li>Muc 3</li>
+
+    </ul> -->
+
+    <!-- orblur,forcus,onkeydown and onkeyup -->
+
+    <!-- <style>
+        .focus{
+            background: yellow;
+        }
+    </style>
+     <input type="text" placeholder="Nhap ho ten" id="inputName" />
+
+     <script>
+
+        const inputName = document.querySelector("#inputName");
+        // inputName.onblur = function(){
+        //    inputName.value = inputName.value.toUpperCase(); 
+        //    inputName.classList.remove("focus");
+        // }
+
+        // inputName.onfocus = function(){
+        //     inputName.classList.add("focus");
+        // }
+
+        // inputName.onkeydown = function(){
+        //     console.log("onkeydown");
+        //     alert("onkeydown");
+        // }
+
+        // inputName.onkeyup = function(){
+        //     console.log("onkeyup");
+        //     alert("onkeyup");
+        // }
+        
+
+
+     </script> -->
+
+     <!-- onclick -->
+
+     <!-- <style>
+        *{
+            box-sizing: border-box;
+        }
+        .body{
+            margin: 0;
+        }
+        .menu{
+            background: orange;
+            width: 250px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 100vh ;
+            display: none;
+        }
+        .menu.show{
+            display: block;
+        }
+        .menu ul{
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .menu ul li{
+            padding: 10px;
+            border-bottom: 1px solid #0000002d;
+        }
+        .menu .inner-close{
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+        .button{
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+     </style>
+     <div class="menu " id="menu">
+        <button class="inner-close" id="buttonClose">
+            Dong
+        </button>
+        <ul>
+            <li>Muc1</li>
+            <li>Muc2</li>
+            <li>Muc3</li>
+        </ul>
+     </div>
+
+     <button class="button" id="buttonMenu">
+        Menu
+     </button>
+
+     <script>
+
+        const buttonMenu = document.querySelector("#buttonMenu");
+        const buttonClose = document.querySelector("#buttonClose");
+        const menu = document.querySelector("#menu");
+
+        buttonMenu.onclick = function(){
+            menu.classList.add("show");
+        }
+
+        buttonClose.onclick = function(){
+            menu.classList.remove("show");
+        }
+
+        
+
+
+     </script> -->
+
+
+
+     <!-- onchange -->
+
+     <!-- <select name="" id="colors">
+        <option value="red">Mau do</option>
+        <option value="yellow">Mau vang</option>
+        <option value="black">Mau den</option>
+     </select>
+
+     <script>
+
+        const colors = document.querySelector("#colors");
+
+        colors.onchange = function(){
+            let currentColor = colors.value; 
+            console.log(currentColor);
+        }
+
+
+
+     </script> -->
+
+<input type="text" placeholder="Nhap ho ten" id="inputName" />
+
+<script>
+
+   const inputName = document.querySelector("#inputName");
+   inputName.onchange = function(){
+    console.log(inputName.value);
+   }
+   </script>
+
+</body>
+
+</html>

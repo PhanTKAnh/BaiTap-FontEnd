@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <style>
+        .light {
+            background: lightblue;
+        }
+        .dark{
+            background: darkblue;
+            color: #fff;
+        }
+        .test-2{
+            
+            color: darkblue ;
+        }
+    </style>
+
+<div class="light" id="box">Noi dung the div</div>
+
+<ul id="menu">
+    <li>Muc 1</li>
+    <li>Muc 2</li>
+    <li>Muc 3</li>
+</ul>
+
+<h2>the h2 01</h2>
+<h2>the h2 02</h2>
+<h2>the h2 03</h2>
+<h2>the h2 04</h2>
+<h2>the h2 05</h2>
+
+<h3 class="test">the h3 01</h3>
+<h4 class="test">the h3 02</h4>
+<h2 class="test">the h3 03</h2>
+<h1 class="test">the h3 04</h1>
+<h5 class="test">the h3 05</h5>
+
+
+<style>
+    .box-1 .box-2 h2 .link{
+        background-color : yellow;
+
+    }
+    .box-1 .box-2 h2 .link .active{
+        background-color : orange;
+
+    }
+</style>
+
+<div class="box-1">
+    <div class="box-2">
+        <h2>
+            <a href="#" class="link">Noi dung the a</a>
+        </h2>
+        <h2>
+            <a href="#" class="link">Noi dung the a</a>
+        </h2>  
+    </div>
+</div>
+
+    <script>
+        // console.log(document);
+    </script>
+
+    <script>
+
+
+        // const box = document.getElementById("box");
+        // box.classList.add("dark");
+
+
+        // console.log(box);
+
+        // const menu = document.getElementById("menu");
+        // console.log(menu);
+
+
+
+    </script>
+
+    <script>
+
+        // const listM2 = document.getElementsByTagName("h2");
+        // console.log(listM2);
+        // console.log(listM2[3]);
+
+
+    </script>
+
+    <script>
+
+        // const listTest = document.getElementsByClassName("test");
+        // console.log(listTest);
+
+        // // console.log(...listTest);
+
+        // [...listTest].forEach(item => {
+        //     item.classList.add("test-2");
+        //     item.classList.remove("test");
+            
+        // });
+
+
+    </script>
+
+    <script>
+
+        // const element = document.querySelector(".box-1 .box-2 h2 .link");
+        // element.classList.add("active");
+        // console.log(element);
+
+        // const elements = document.querySelectorAll(".box-1 .box-2 h2 .link");
+
+        // [...elements].forEach(item =>{
+        //     item.classList.add("test");
+        // })
+
+    </script>
+
+    <script>
+        // const box = document.querySelector("#box");
+        // console.log(box);
+
+        // const box = document.querySelectorAll("h2");
+        // console.log(box);
+
+        
+        // const box = document.querySelectorAll(".test");
+        // console.log(box);
+    </script>
+    
+
+
+
+</body>
+</html>
